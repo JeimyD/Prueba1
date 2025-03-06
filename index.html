@@ -44,27 +44,27 @@
     </div>
 
     <script>
-        function showInfo(section) {
-            let content = "";
-            if (section === "inicio") {
-                content = "<h2>Inicio</h2><p>Bienvenidos a nuestra página web. Aquí podrás encontrar toda la información sobre nosotros.</p>";
-            } else if (section === "nosotros") {
-                content = "<h2>Nosotros</h2><p>Somos una empresa dedicada a ofrecer los mejores servicios del mercado.</p>";
-            } else if (section === "mision") {
-                content = "<h2>Misión</h2><p>Nuestra misión es proporcionar soluciones innovadoras a nuestros clientes con la máxima calidad.</p>";
-            } else if (section === "vision") {
-                content = "<h2>Visión</h2><p>Aspiramos a ser líderes en el sector, creando valor para nuestros clientes y colaboradores.</p>";
-            } else if (section === "contacto") {
-                content = document.getElementById("contacto-formulario").outerHTML;
-            } else if (section === "ubicacion") {
-                content = "<h2>Ubicación</h2><p>Nos encontramos en la Calle Ejemplo 123, Ciudad, País.</p>";
-            }
-            Swal.fire({
-                html: content,
-                showCloseButton: true,
-                width: '80%',
-                padding: '20px'
-            });
+    function showInfo(section) {
+        let content = "";
+        if (section === "inicio") {
+            content = "<h2>Inicio</h2><p>Bienvenidos a nuestra página web. Aquí podrás encontrar toda la información sobre nosotros.</p>";
+        } else if (section === "nosotros") {
+            content = "<h2>Nosotros</h2><p>Somos una empresa dedicada a ofrecer los mejores servicios del mercado.</p>";
+        } else if (section === "mision") {
+            content = "<h2>Misión</h2><p>Nuestra misión es proporcionar soluciones innovadoras a nuestros clientes con la máxima calidad.</p>";
+        } else if (section === "vision") {
+            content = "<h2>Visión</h2><p>Aspiramos a ser líderes en el sector, creando valor para nuestros clientes y colaboradores.</p>";
+        } else if (section === "contacto") {
+            content = document.getElementById("contacto-formulario").outerHTML;
+        } else if (section === "ubicacion") {
+            content = "<h2>Ubicación</h2><p>Nos encontramos en la Calle Ejemplo 123, Ciudad, País.</p>";
+        }
+        Swal.fire({
+            html: content,
+            showCloseButton: true,
+            width: '80%',
+            padding: '20px'
+        });
         }
     </script>
 </body>
